@@ -30,7 +30,7 @@ The dataset contains over **690,000** records with trip details and correspondin
 ---
 
 ##  Machine Learning Models
-
+models link:- 'https://huggingface.co/AkashuKarmakar/Akash_UberTripAnalysis_projectModels/tree/main' 
 ### 1. Price Prediction (Regression)
 
 - **Target**: `price`
