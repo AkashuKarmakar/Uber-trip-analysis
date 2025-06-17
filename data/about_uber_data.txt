@@ -1,0 +1,65 @@
+---------Trip & Ride Information----------
+Column Name			Description
+id			Unique identifier for each trip record
+cab_type		Type of cab (e.g., Lyft, Uber)
+product_id		Identifier for the specific product within a cab type
+name			Name of the cab service (e.g., Lyft XL, Shared, Lux Black)
+price			Trip fare in USD
+distance		Distance of the trip in miles
+surge_multiplier	Surge pricing multiplier (1 means no surge, >1 means surge applied)
+
+----------Location Information-------------
+source			Trip starting location (e.g., Haymarket Square)
+destination		Trip ending location (e.g., North Station)
+latitude		Latitude of the pickup location
+longitude		Longitude of the pickup location
+
+--------Time Features-------------------
+timestamp		Unix timestamp representing trip time
+datetime		Human-readable datetime (e.g., 2018-12-16 09:30:07)
+hour			Hour of the day (0–23)
+day			Day of the month (1–31)
+month			Month of the year (1–12)
+timezone		Timezone of the ride (e.g., America/New_York)
+
+---------Weather Conditions at Time of Trip---------
+temperature		Temperature in °F at time of ride
+apparentTemperature	Feels-like temperature in °F
+short_summary		Short weather description (e.g., "Rain", "Clear")
+long_summary		Detailed weather summary (e.g., "Rain throughout the day.")
+icon			Weather icon type (e.g., clear-night, rain)
+dewPoint		Dew point temperature in °F
+humidity		Relative humidity (0 to 1)
+windSpeed		Wind speed in mph
+windGust		Wind gust speed in mph
+windGustTime		Time when the gust occurred (Unix timestamp)
+windBearing		Wind direction in degrees
+cloudCover		Cloud cover percentage (0 = clear, 1 = overcast)
+uvIndex			UV index value (sun exposure level)
+visibility / visibility.1		Distance one can see in miles
+ozone			Ozone concentration (Dobson Units)
+precipIntensity		Rainfall intensity (inches/hour)
+precipProbability	Probability of precipitation (0 to 1)
+precipIntensityMax	Maximum recorded precipitation intensity
+
+----------Daily Weather Extremes & Events----------
+temperatureHigh			Highest temperature that day
+temperatureHighTime		Time (Unix) of the high temperature
+temperatureLow			Lowest temperature that day
+temperatureLowTime		Time (Unix) of the low temperature
+apparentTemperatureHigh		Feels-like high temperature
+apparentTemperatureHighTime	Time of apparent high
+apparentTemperatureLow		Feels-like low temperature
+apparentTemperatureLowTime	Time of apparent low
+temperatureMin	Minimum 	temperature that day
+temperatureMinTime		Time of the min temperature
+temperatureMax			Maximum temperature that day
+temperatureMaxTime		Time of max temperature
+apparentTemperatureMin		Minimum feels-like temperature
+apparentTemperatureMinTime	Time of minimum apparent temperature
+apparentTemperatureMax		Maximum feels-like temperature
+apparentTemperatureMaxTime	Time of maximum apparent temperature
+sunriseTime			Time of sunrise (Unix time)
+sunsetTime			Time of sunset (Unix time)
+moonPhase			Moon phase value (0 = new moon, 1 = full moon)
+uvIndexTime			Time when UV index was measured
